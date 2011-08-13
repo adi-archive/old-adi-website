@@ -1,0 +1,36 @@
+<article class="post">
+  <section class="header">
+    <h1><%= @post.title %></h1>
+    <p>by <%= render :partial => "author", :locals => { :author => @post.authors.first } %> | <time datetime="<%= @post.post_date %>"><%= @post.post_date.strftime("%B %e, %Y, %I:%M%P") %></time></p>
+  </section>
+  <section class="body">
+    <%= simple_format @post.entry %>
+  </section>
+</article>
+
+<nav>
+<% unless @prev_post.nil? %>  
+  <div class="prev_post">
+    <%= link_to @prev_post.title, @prev_post %>
+  </div>
+<% end %>
+<% unless @next_post.nil? %>
+  <div class="next_post">
+    <%= link_to @next_post.title, @next_post %>
+  </div>
+<% end %>
+</nav>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'applicationdevelopmentinitiativeblog';
+    // var disqus_identifier = 'unique_dynamic_id_1234';
+    // var disqus_url = 'http://example.com/permalink-to-page.html';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the comments.</noscript>

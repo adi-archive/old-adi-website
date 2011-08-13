@@ -1,0 +1,307 @@
+/***** Global *****/
+/* Body */
+body {
+  background: white;
+	color: #222222;
+	font-size: 87.5%; /* Base font size: 14px */
+	font-family: 'Myriad Pro', 'Lucida Grande', 'Lucida Sans', 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', Arial, sans-serif;
+	line-height: 1.429;
+	text-align: left;
+	margin: 0;
+	padding: 0; 
+  }
+
+/* Headings */
+h2 {font-size: 1.571em}	/* 22px */
+h3 {font-size: 1.429em; font-style: italic; }	/* 20px */
+h4 {font-size: 1.286em}	/* 18px */
+h5 {font-size: 1.143em}	/* 16px */
+h6 {font-size: 1em}	/* 14px */
+
+h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	line-height: 1.1;
+	margin: 0 0 .8em;
+}
+
+#content h2 { margin-top: 40px; }
+#content h2:first-child { margin-top: 0; }
+
+#content h3 { margin-top: 20px; }
+#content h3:first-child { margin-top: 0; }
+
+/* Anchors */
+a {
+  outline: 0; 
+  margin: 0;
+  padding: 0;
+  }  
+a img {
+  border: 0px; 
+  text-decoration: none;
+  }
+a:link, a:visited {
+	color: #448cd1;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #144473;
+	text-decoration: none;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.03em;
+  margin-bottom: 1.143em;
+  }
+* p:last-child {margin-bottom: 0;}
+
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+
+/* Lists */
+ul, ol { list-style: disc; padding: 0; margin: 0 0 30px 30px; }
+ul.no_style, ol.no_style { list-style: none; margin-left: 0; }
+dl {margin: 0 0 1.5em 0;}
+dt {font-weight: bold;}
+dd {margin-left: 1.5em;}
+
+/* Quotes */
+blockquote {font-style: italic;}
+cite {}
+
+q {}
+
+/* Tables */
+table {margin: .5em auto 1.5em auto; width: 98%;}
+
+	/* Thead */
+	thead th {padding: .5em .4em; text-align: left;}
+	thead td {}
+
+	/* Tbody */
+	tbody td {padding: .5em .4em;}
+	tbody th {}
+
+	tbody .alt td {}
+	tbody .alt th {}
+
+	/* Tfoot */
+	tfoot th {}
+	tfoot td {}
+	
+/***** Custom *****/
+div#container { 
+	position: relative;
+	width: 940px; 
+	margin: 0 auto; 
+	}
+
+#container > header, #container > section, #container > footer {
+	float: left;
+	width: 100%;
+	}
+
+nav { position: absolute; top: 20px; right: 0; font-size: 1.1em; }
+nav ul { padding: 0; margin: 0; }
+nav li { display: inline; padding-right: 7px; }
+nav li:last-child { padding-right: 0; }
+
+header#banner { margin: 40px 0 20px; position: relative; }
+
+header#banner h1 {
+  font-size: 1.4em;
+  float: left;
+  padding: 0;
+	margin: 0;
+  }
+  
+header#banner h1 a {
+  display: block;
+  padding: 40px 0 0 130px;
+  background: url( "/images/adi-logo.png" ) no-repeat;
+  color: #a9a9a9;
+  font-weight: normal;
+  text-transform: lowercase;
+  }
+
+div#next_event { margin-top: 25px; }
+
+div#next_event a {
+  display: block;
+  float: right;
+  padding: 10px 20px;  
+  background: #59a80f;
+  border-radius: 10px;
+  -moz-border-radius: 10px; 
+  color: white;
+  text-align: center;
+  line-height: 1.2em;
+  font-size: 1.2em;
+  max-width: 450px;
+}
+
+aside#featured { margin: 0 0 30px; float: left; }
+
+aside#featured h2 {
+  width: 600px;
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  }
+
+section#content {
+  width: 600px;
+  margin-right: 40px;
+  }
+
+#content ol#features {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+
+#features li {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  }
+
+#features article.hentry figure { 
+  float: right; 
+  width:200px;
+  margin: 20px 0 0 20px;
+  height: 100%;
+  }
+  
+#features article.hentry header,
+#features article.hentry div.entry-content {
+  float: left;
+  width: 380px;
+  }
+  
+#features article.full header,
+#features article.full div.entry-content {width: 600px;}
+  
+
+#features article.hentry h2.entry-category {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  font-weight: normal;
+  }
+
+#features article.hentry h1.entry-title {
+  margin: 5px 0;
+  padding: 0;
+  font-size: 1.6em;
+  }
+
+#features article.hentry div.entry-content p:first-child {margin-top: 0;}
+
+section#sidebar { width: 300px; }
+
+#sidebar aside { margin-bottom: 40px; float: left; }
+
+#sidebar aside h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.15em; 
+  font-weight: normal;
+  line-height: 1.3em;
+  }
+  
+#sidebar aside ul, ul.buttons {
+  margin: 25px 0 0;
+  padding: 0;
+  list-style: none;
+  }
+
+#sidebar aside li, .buttons li {
+  display: inline;
+  margin: 0 5px 0 0;
+  }
+  
+#sidebar aside li a, .buttons li a {
+  background: #448cd1;
+  color: white;
+  padding: 8px 8px;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  } 
+
+#sponsor_logos img { width: 115px; max-height: 90px; }
+
+footer#contentinfo {
+  width: 100%;
+  margin: 50px 0 20px;
+  }
+
+p#licensing-info {
+  position: relative;
+  width: 100%;
+  }
+  
+#licensing-info img {margin-right: 10px;}
+  
+#licensing-info span.logo-small {
+  position: absolute;
+  bottom: -6px;
+  right: 0;
+  background: url( "/images/adi-logo-small.png" ) 0 2px no-repeat;
+  padding: 0 0 0 50px;
+  font-size: 1.8em;
+  color: #a9a9a9;
+  }
+
+ul.buttons { margin-bottom: 25px; }
+
+ul#contacts, #contacts li { list-style: none; margin: 0; padding: 0; }
+
+#contacts li { margin-bottom: 20px; }
+
+#contacts h2 { margin: 0; }
+
+#contacts p { margin: 0 0 10px; }
+
+#logout form { float: right; }
+
+p.photo-byline { text-align: right; font-style: italic; margin: 0; padding: 0; font-size: 0.9em; margin-top: -5px; }
+
+table#eboard-roster { width: 600px; margin: 10px 0 0; }
+#eboard-roster td { margin: 0; padding: 0; }
+#eboard-roster td:nth-child(odd) { width: 100px; } 
+#eboard-roster td:nth-child(even) { width: 40px; text-align: right; font-weight: 600; }
+#eboard-roster td:nth-child(3) { padding-left: 50px; }
+
+table.logos td { text-align: center; vertical-align: center; }
+
+ul#alumni_mentors { margin: 0; padding: 0; list-style: none; }
+#alumni_mentors li { float: left; margin-bottom: 20px; }
+#alumni_mentors img { float: right; }
+#alumni_mentors p { float: left; width: 480px; margin: 0; padding: 0; margin-right: 20px; margin-bottom: 5px; }
+
+ul#projects { margin: 0; padding: 0; list-style: none; }
+#projects li { float: left; margin-bottom: 20px; }
+#projects img { float: left; }
+#projects div { float: right; width: 380px; margin-left: 20px; }
+#projects p, #projects h3 { margin: 0; padding: 0; }
+#projects p.entry { margin-top: 5px; }
+
+figure { margin: 0; }
+figure#devfest img {margin: 30px 0 30px 0;}
+
+#social_links img { width: 50px; height: 50px; }
+
+ul.posts { margin: 20px 0; }
+.post_teaser { list-style: none; margin: 0; }
+.post_teaser h2 { margin: 0; }
+.post_teaser p.read_more { float: right; margin: 0; }
+.post_teaser:first-child h2 { font-size: 2.2em; }
+.post section.body p { margin-top: 30px; line-height: 1.8em; font-family: "Lucida Grande" }
+
+#disqus_thread { margin-top: 40px; float: left; width: 100%; }

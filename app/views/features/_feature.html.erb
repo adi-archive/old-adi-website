@@ -1,0 +1,16 @@
+<li class="feature">
+  <article class="hentry<%= " full" if feature.image.url == "/images/original/missing.png" %>">
+  <% unless feature.image.url == "/images/original/missing.png" %>
+    <figure>
+      <%= image_tag feature.image.url(:figure) %>
+    </figure>
+  <% end %>
+    <header>
+      <h2 class="entry-category"><%= feature.category %></h2>
+      <h1 class="entry-title"><%= link_to feature.title, feature.url %></h1>
+    </header>
+    <div class="entry-content">
+      <p><%= feature.entry %></p>
+    </div>
+  </article>
+</li>

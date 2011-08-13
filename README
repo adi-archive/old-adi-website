@@ -1,0 +1,14 @@
+== Developers
+
+Version 0.1, 0.2 by Ryan Bubinski, 2010.
+ryanbubinski@gmail.com.
+
+== Technical Details
+
+= Version 0.1
+	- Global variables are defined in /config.ini.php
+	- Custom PHP functions are defined in /common.php.
+	- JavaScript functions are defined in /application.js
+	- CSS styles are located in /application.css
+
+= Version 0.2

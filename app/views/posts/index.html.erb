@@ -1,0 +1,6 @@
+<ul class="posts">
+<% @posts.each do |p| %>
+  <%= render :partial => "post_teaser", :locals => { :post => p } %>
+<% end %>
+</ul>
+<%= will_paginate @posts %>

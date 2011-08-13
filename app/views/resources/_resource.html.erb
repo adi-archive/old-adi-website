@@ -1,0 +1,16 @@
+<li class="feature">
+  <article class="hentry<%= " full" if resource.image.url == "/images/original/missing.png" %>">
+  <% puts resource.image.url %>
+  <% unless resource.image.url == "/images/original/missing.png" %>
+    <figure>
+      <%= image_tag resource.image.url(:figure) %>
+    </figure>
+  <% end %>
+    <header>
+      <h1 class="entry-title"><%= link_to resource.title, resource.url %></h1>
+    </header>
+    <div class="entry-content">
+      <p><%= resource.entry %></p>
+    </div>
+  </article>
+</li>

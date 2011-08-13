@@ -1,0 +1,8 @@
+<li class="post_teaser">
+  <h2><%= link_to post.title, post %></h2>
+  <p>By <%= render :partial => "author", :locals => { :author => post.authors.first } %> | <time datetime="<%= post.post_date %>"><%= post.post_date.strftime("%B %e, %Y, %I:%M%P") %></time></p>
+<!--
+  <%= simple_format post.teaser %>
+  <p class="read_more"><%= link_to "read more", post %></p>
+-->
+</li>

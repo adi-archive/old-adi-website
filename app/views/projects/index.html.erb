@@ -1,0 +1,26 @@
+<aside id="featured" class="body">
+  <h2>At the end of the day, we're all about building things. Here are few awesome apps built by Columbia students, past and present.</h2>
+</aside>
+
+<p>Have a project you'd like added to this list? Email us at <a href="mailto:infrastructure@adicu.com">infrastructure@adicu.com</a>.</p>
+
+<ul id="projects">
+<% @projects.each do |project| %>
+  <li>
+    <%= link_to( image_tag( project.thumbnail.url(:thumb) ), project.url ) unless project.thumbnail.nil? %>
+    <div>
+  <% unless project.url.nil? %>
+      <h3><%= link_to project.title, project.url %></h3>
+  <% end %>
+  <% unless project.developers.nil? %>
+      <p>By <%= project.developers %></p>
+  <% end %>
+  <% unless project.entry.nil? %>
+      <p class="entry"><%= project.entry %></p>
+  <% end %>
+    </div>
+  </li>
+<% end %>
+</ul>
+
+<p><%= will_paginate @projects %></p>
