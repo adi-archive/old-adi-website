@@ -9,8 +9,6 @@ class HomeController < ApplicationController
   def contact
   end
 
-  def board
-  end
 
   def devfest_2011
   end
@@ -19,6 +17,9 @@ class HomeController < ApplicationController
   end
 
   def hacksquad
+  end
+
+  def jobs
   end
   
 end
