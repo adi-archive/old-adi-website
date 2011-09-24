@@ -285,6 +285,8 @@ ul#alumni_mentors { margin: 0; padding: 0; list-style: none; }
 #alumni_mentors img { float: right; }
 #alumni_mentors p { float: left; width: 480px; margin: 0; padding: 0; margin-right: 20px; margin-bottom: 5px; }
 
+ul.main_content_list { margin: 0; padding: 0; list-style: none; }
+
 ul#projects { margin: 0; padding: 0; list-style: none; }
 #projects li { float: left; margin-bottom: 20px; }
 #projects img { float: left; }

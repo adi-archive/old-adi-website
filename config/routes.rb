@@ -14,6 +14,7 @@ Adicu::Application.routes.draw do
   match "contact", :to => "home#contact", :as => "contact"
   match "board", :to => "home#board", :as => "board"
   match "jobs", :to => "home#jobs", :as => "jobs"
+  match "board_info", :to => "home#board_info", :as => "board_info"
 
   match "blog", :to => "posts#index", :as => "blog"
   match "devfest2011", :to => "home#devfest_2011", :as => "devfest_2011"
