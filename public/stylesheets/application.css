@@ -8,7 +8,7 @@ body {
 	line-height: 1.429;
 	text-align: left;
 	margin: 0;
-	padding: 0; 
+	padding: 0;
   }
 
 /* Headings */
@@ -32,12 +32,12 @@ h2, h3, h4, h5, h6 {
 
 /* Anchors */
 a {
-  outline: 0; 
+  outline: 0;
   margin: 0;
   padding: 0;
-  }  
+  }
 a img {
-  border: 0px; 
+  border: 0px;
   text-decoration: none;
   }
 a:link, a:visited {
@@ -89,12 +89,12 @@ table {margin: .5em auto 1.5em auto; width: 98%;}
 	/* Tfoot */
 	tfoot th {}
 	tfoot td {}
-	
+
 /***** Custom *****/
-div#container { 
+div#container {
 	position: relative;
-	width: 940px; 
-	margin: 0 auto; 
+	width: 940px;
+	margin: 0 auto;
 	}
 
 #container > header, #container > section, #container > footer {
@@ -115,7 +115,7 @@ header#banner h1 {
   padding: 0;
 	margin: 0;
   }
-  
+
 header#banner h1 a {
   display: block;
   padding: 40px 0 0 130px;
@@ -130,10 +130,10 @@ div#next_event { margin-top: 25px; }
 div#next_event a {
   display: block;
   float: right;
-  padding: 10px 20px;  
+  padding: 10px 20px;
   background: #59a80f;
   border-radius: 10px;
-  -moz-border-radius: 10px; 
+  -moz-border-radius: 10px;
   color: white;
   text-align: center;
   line-height: 1.2em;
@@ -169,22 +169,22 @@ section#content {
   margin-bottom: 20px;
   }
 
-#features article.hentry figure { 
-  float: right; 
+#features article.hentry figure {
+  float: right;
   width:200px;
   margin: 20px 0 0 20px;
   height: 100%;
   }
-  
+
 #features article.hentry header,
 #features article.hentry div.entry-content {
   float: left;
   width: 380px;
   }
-  
+
 #features article.full header,
 #features article.full div.entry-content {width: 600px;}
-  
+
 
 #features article.hentry h2.entry-category {
   margin: 0;
@@ -208,11 +208,11 @@ section#sidebar { width: 300px; }
 #sidebar aside h3 {
   margin: 0;
   padding: 0;
-  font-size: 1.15em; 
+  font-size: 1.15em;
   font-weight: normal;
   line-height: 1.3em;
   }
-  
+
 #sidebar aside ul, ul.buttons {
   margin: 25px 0 0;
   padding: 0;
@@ -223,7 +223,7 @@ section#sidebar { width: 300px; }
   display: inline;
   margin: 0 5px 0 0;
   }
-  
+
 #sidebar aside li a, .buttons li a {
   background: #448cd1;
   color: white;
@@ -232,9 +232,9 @@ section#sidebar { width: 300px; }
   -moz-border-radius: 8px;
   text-align: center;
   font-size: 1.2em;
-  } 
+  }
 
-#sponsor_logos img { width: 115px; max-height: 90px; }
+.logos img { width: 115px; max-height: 90px; }
 
 footer#contentinfo {
   width: 100%;
@@ -245,9 +245,9 @@ p#licensing-info {
   position: relative;
   width: 100%;
   }
-  
+
 #licensing-info img {margin-right: 10px;}
-  
+
 #licensing-info span.logo-small {
   position: absolute;
   bottom: -6px;
@@ -274,7 +274,7 @@ p.photo-byline { text-align: right; font-style: italic; margin: 0; padding: 0; f
 
 table#eboard-roster { width: 600px; margin: 10px 0 0; }
 #eboard-roster td { margin: 0; padding: 0; }
-#eboard-roster td:nth-child(odd) { width: 100px; } 
+#eboard-roster td:nth-child(odd) { width: 100px; }
 #eboard-roster td:nth-child(even) { width: 40px; text-align: right; font-weight: 600; }
 #eboard-roster td:nth-child(3) { padding-left: 50px; }
 
@@ -307,3 +307,7 @@ ul.posts { margin: 20px 0; }
 .post section.body p { margin-top: 30px; line-height: 1.8em; font-family: "Lucida Grande" }
 
 #disqus_thread { margin-top: 40px; float: left; width: 100%; }
+
+h1.title { font-size: 25px; }
+
+.section { margin-bottom: 20px; }

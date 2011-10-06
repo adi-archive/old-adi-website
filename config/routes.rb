@@ -18,6 +18,7 @@ Adicu::Application.routes.draw do
 
   match "blog", :to => "posts#index", :as => "blog"
   match "devfest2011", :to => "home#devfest_2011", :as => "devfest_2011"
+  match "jobfair", :to => "home#job_fair_2011", :as => "job_fair_2011"
   match "dinners", :to => "home#dinners", :as => "dinners"
   match "hacksquad", :to => "home#hacksquad", :as => "hacksquad"
 
