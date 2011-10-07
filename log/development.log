@@ -7785,3 +7785,26 @@ Started GET "/jobfair" for 127.0.0.1 at 2011-10-07 00:09:50 -0400
 Rendered shared/_next_event.html.erb (453.0ms)
 Rendered home/job_fair_2011.html.erb within layouts/application (516.2ms)
 Completed 200 OK in 522ms (Views: 521.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/jobfair" for 127.0.0.1 at 2011-10-07 00:26:58 -0400
+  Processing by HomeController#job_fair_2011 as HTML
+Rendered shared/_next_event.html.erb (556.2ms)
+Rendered home/job_fair_2011.html.erb within layouts/application (634.7ms)
+Completed 200 OK in 642ms (Views: 640.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-07 00:28:02 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mFeature Load (2.5ms)[0m  [1mSELECT "features".* FROM "features" ORDER BY created_at DESC LIMIT 5[0m
+Rendered features/_feature.html.erb (90.5ms)
+Rendered shared/_next_event.html.erb (360.0ms)
+Rendered home/index.html.erb within layouts/application (539.2ms)
+Completed 200 OK in 565ms (Views: 544.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/jobfair" for 127.0.0.1 at 2011-10-07 00:28:05 -0400
+  Processing by HomeController#job_fair_2011 as HTML
+Rendered shared/_next_event.html.erb (911.2ms)
+Rendered home/job_fair_2011.html.erb within layouts/application (973.0ms)
+Completed 200 OK in 978ms (Views: 977.7ms | ActiveRecord: 0.0ms)
