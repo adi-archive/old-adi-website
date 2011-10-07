@@ -235,6 +235,9 @@ section#sidebar { width: 300px; }
   }
 
 .logos img { width: 115px; max-height: 90px; }
+.logos img.tall { width: auto; max-height: 60px; }
+.logos.varied img { margin-right: 10px; margin-bottom: 10px; }
+.logos .logo-wrapper { display: inline-block; vertical-align: middle; }
 
 footer#contentinfo {
   width: 100%;
