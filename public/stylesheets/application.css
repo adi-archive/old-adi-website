@@ -234,10 +234,26 @@ section#sidebar { width: 300px; }
   font-size: 1.2em;
   }
 
-.logos img { width: 115px; max-height: 90px; }
-.logos img.tall { width: auto; max-height: 60px; }
-.logos.varied img { margin-right: 10px; margin-bottom: 10px; }
-.logos .logo-wrapper { display: inline-block; vertical-align: middle; }
+.logos img {
+	width: 115px;
+	max-height: 90px;
+}
+
+.logos img.tall {
+	width: auto;
+	max-height: 60px;
+}
+
+.logos.varied img {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.logos .logo-wrapper {
+	display: inline-block;
+	vertical-align: middle;
+	width: 115px;
+}
 
 footer#contentinfo {
   width: 100%;
