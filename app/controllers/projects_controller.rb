@@ -2,7 +2,7 @@ class ProjectsController < ApplicationController
   before_filter :require_user, :except => [:index]
 
   def index
-    @projects = Project.paginate :page => params[:page], :order => 'created_at DESC', :per_page => 10
+    @projects = Project.paginate :page => params[:page], :order => 'updated_at DESC', :per_page => 10
   end
 
   def new

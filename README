@@ -6,7 +6,4 @@ Sid Nair, 2011.
 sidnair09@gmail.com
 
 Technical Notes:
-Directory structure follows Rails 3.0 standards. To restart the server, you need to kill the existing process and then start the server using the start_server script in this directory. For example:
-	sgo@99-columbians-server:~/Sites/adicu$ ps aux | grep thin | grep adicu
-	sgo       9808  0.1  3.0 181480 62876 ?        Sl   Oct19   5:57 thin server (/tmp/thin.adicu.0.sock)
-	sgo@99-columbians-server:~/Sites/adicu$ kill 9808 && ./start_server.sh 
+Directory structure follows Rails 3.0 standards. To restart the server, run ./start_server.sh. This will restart the server.

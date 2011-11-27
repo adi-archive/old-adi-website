@@ -23,7 +23,7 @@
 <body id="index" class="home">
 
   <div id="container">
-  
+
     <nav id="nav">
       <ul>
         <li><%= link_to "Events", Calendar.url %></li>
@@ -37,20 +37,20 @@
         <% end %>
       </ul>
     </nav>
-  
+
     <header id="banner">
       <h1><%= link_to "Application Development Initiative", "/" %></h1>
       <div id="next_event">
         <%= render :partial => "shared/next_event" %>
       </div>
     </header>
-  
+
     <section id="content" >
       <%= yield %>
     </section>
 
     <section id="sidebar" >
-  
+
       <aside id="getting_started">
         <hgroup>
           <h2>Getting Started</h2>
@@ -61,14 +61,17 @@
           <li><a target="_blank" href="<%= Calendar.url %>">Events</a></li>
           <li><a target="_blank" href="http://wiki.adicu.com/">Wiki</a></li>
         </ul>
-      </aside>  
-      
+      </aside>
+
       <aside id="about_us">
         <h2>About Us</h2>
         <p>The primary goal of the Application Development Initiative is to nurture student creativity and technological aptitude by creating a communal resource for developers of all talents and interests.</p>
         <p>Columbia University students of all backgrounds are invited and encouraged to take an active role in this initiative.</p>
-        <p id="social_links"><a href="http://www.facebook.com/group.php?gid=154181094603933&v=info&ref=mf"><%= image_tag( "fb.png" ) %></a>
-           <a href="http://twitter.com/adi_cu"><%= image_tag( "twitter.jpeg" ) %></a></p>
+        <p id="social_links">
+          <a href="http://facebook.com/adicu"><%= image_tag( "fb.png" ) %></a>
+          <a href="gplus.to/adicu"><%= image_tag( "googleplus.png" ) %></a>
+          <a href="http://twitter.com/adi_cu"><%= image_tag( "twitter.jpeg" ) %></a>
+        </p>
       </aside>
 
     </section>

@@ -252,7 +252,7 @@ section#sidebar { width: 300px; }
 .logos .logo-wrapper {
 	display: inline-block;
 	vertical-align: middle;
-	width: 115px;
+	/* width: 125px; */
 }
 
 footer#contentinfo {
