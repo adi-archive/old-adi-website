@@ -329,4 +329,10 @@ ul.posts { margin: 20px 0; }
 
 h1.title { font-size: 25px; }
 
+
+img.title {
+    width: 400px;
+    margin-bottom: 25px;
+}
+
 .section { margin-bottom: 20px; }
