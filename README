@@ -6,4 +6,6 @@ Sid Nair, 2011.
 sidnair09@gmail.com
 
 Technical Notes:
-Directory structure follows Rails 3.0 standards. To restart the server, run ./start_server.sh. This will restart the server.
+Directory structure follows Rails 3.0 standards. To restart the server, kill the
+current server process (you can run `ps aux | grep thin` or something similar to
+find the pid) and run `./start_server.sh.`
