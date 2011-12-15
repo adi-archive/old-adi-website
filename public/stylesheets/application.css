@@ -238,11 +238,16 @@ section#sidebar { width: 300px; }
 	width: 115px;
 	max-height: 90px;
 }
-
 .logos img.tall {
 	width: auto;
 	max-height: 60px;
 }
+
+.logos.large img {
+	width: 175px;
+	max-height: 90px;
+}
+
 
 .logos.varied img {
 	margin-right: 10px;
