@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
   def index
-    @features = Feature.order("created_at DESC").limit(5).all
+    @features = Feature.order("updated_at DESC").limit(5).all
   end
 
   def media
