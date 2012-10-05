@@ -1,6 +1,8 @@
 *.swp
-log/*
-tmp/*
+/log
+/tmp
+/public/system
 *~
 #*#
 .rvmrc
+*.sqlite3
