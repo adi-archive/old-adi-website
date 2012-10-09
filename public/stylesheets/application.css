@@ -260,6 +260,10 @@ section#sidebar { width: 300px; }
 	/* width: 125px; */
 }
 
+.blackbg {
+  background: #000000;
+}
+
 footer#contentinfo {
   width: 100%;
   margin: 50px 0 20px;
