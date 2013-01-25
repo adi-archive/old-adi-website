@@ -2,14 +2,14 @@
 /* Body */
 body {
   background: white;
-	color: #222222;
-	font-size: 87.5%; /* Base font size: 14px */
-	font-family: 'Myriad Pro', 'Lucida Grande', 'Lucida Sans', 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', Arial, sans-serif;
-	line-height: 1.429;
-	text-align: left;
-	margin: 0;
-	padding: 0;
-  }
+  color: #222222;
+  font-size: 87.5%; /* Base font size: 14px */
+  font-family: 'Myriad Pro', 'Lucida Grande', 'Lucida Sans', 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', Arial, sans-serif;
+  line-height: 1.429;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
 
 /* Headings */
 h2 {font-size: 1.571em}	/* 22px */
@@ -19,9 +19,9 @@ h5 {font-size: 1.143em}	/* 16px */
 h6 {font-size: 1em}	/* 14px */
 
 h2, h3, h4, h5, h6 {
-	font-weight: 600;
-	line-height: 1.1;
-	margin: 0 0 .8em;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 0 .8em;
 }
 
 #content h2 { margin-top: 40px; }
@@ -35,25 +35,25 @@ a {
   outline: 0;
   margin: 0;
   padding: 0;
-  }
+}
 a img {
   border: 0px;
   text-decoration: none;
-  }
+}
 a:link, a:visited {
-	color: #448cd1;
-	text-decoration: none;
+  color: #448cd1;
+  text-decoration: none;
 }
 a:hover, a:active {
-	color: #144473;
-	text-decoration: none;
+  color: #144473;
+  text-decoration: none;
 }
 
 /* Paragraphs */
 p {
   font-size: 1.03em;
   margin-bottom: 1.143em;
-  }
+}
 * p:last-child {margin-bottom: 0;}
 
 strong, b {font-weight: bold;}
@@ -75,32 +75,32 @@ q {}
 /* Tables */
 table {margin: .5em auto 1.5em auto; width: 98%;}
 
-	/* Thead */
-	thead th {padding: .5em .4em; text-align: left;}
-	thead td {}
+/* Thead */
+thead th {padding: .5em .4em; text-align: left;}
+thead td {}
 
-	/* Tbody */
-	tbody td {padding: .5em .4em;}
-	tbody th {}
+/* Tbody */
+tbody td {padding: .5em .4em;}
+tbody th {}
 
-	tbody .alt td {}
-	tbody .alt th {}
+tbody .alt td {}
+tbody .alt th {}
 
-	/* Tfoot */
-	tfoot th {}
-	tfoot td {}
+/* Tfoot */
+tfoot th {}
+tfoot td {}
 
 /***** Custom *****/
 div#container {
-	position: relative;
-	width: 940px;
-	margin: 0 auto;
-	}
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
 
 #container > header, #container > section, #container > footer {
-	float: left;
-	width: 100%;
-	}
+  float: left;
+  width: 100%;
+}
 
 nav { position: absolute; top: 20px; right: 0; font-size: 1.1em; }
 nav ul { padding: 0; margin: 0; }
@@ -113,8 +113,8 @@ header#banner h1 {
   font-size: 1.4em;
   float: left;
   padding: 0;
-	margin: 0;
-  }
+  margin: 0;
+}
 
 header#banner h1 a {
   display: block;
@@ -123,7 +123,7 @@ header#banner h1 a {
   color: #a9a9a9;
   font-weight: normal;
   text-transform: lowercase;
-  }
+}
 
 div#next_event { margin-top: 25px; }
 
@@ -149,38 +149,38 @@ aside#featured h2 {
   font-weight: normal;
   font-size: 1.5em;
   line-height: 1.25em;
-  }
+}
 
 section#content {
   width: 600px;
   margin-right: 40px;
-  }
+}
 
 #content ol#features {
   float: left;
   margin: 0;
   padding: 0;
   list-style: none;
-  }
+}
 
 #features li {
   float: left;
   width: 100%;
   margin-bottom: 20px;
-  }
+}
 
 #features article.hentry figure {
   float: right;
   width:200px;
   margin: 20px 0 0 20px;
   height: 100%;
-  }
+}
 
 #features article.hentry header,
 #features article.hentry div.entry-content {
   float: left;
   width: 380px;
-  }
+}
 
 #features article.full header,
 #features article.full div.entry-content {width: 600px;}
@@ -191,13 +191,13 @@ section#content {
   padding: 0;
   font-size: 1.2em;
   font-weight: normal;
-  }
+}
 
 #features article.hentry h1.entry-title {
   margin: 5px 0;
   padding: 0;
   font-size: 1.6em;
-  }
+}
 
 #features article.hentry div.entry-content p:first-child {margin-top: 0;}
 
@@ -211,18 +211,18 @@ section#sidebar { width: 300px; }
   font-size: 1.15em;
   font-weight: normal;
   line-height: 1.3em;
-  }
+}
 
 #sidebar aside ul, ul.buttons {
   margin: 25px 0 0;
   padding: 0;
   list-style: none;
-  }
+}
 
 #sidebar aside li, .buttons li {
   display: inline;
   margin: 0 5px 0 0;
-  }
+}
 
 #sidebar aside li a, .buttons li a {
   background: #448cd1;
@@ -232,32 +232,32 @@ section#sidebar { width: 300px; }
   -moz-border-radius: 8px;
   text-align: center;
   font-size: 1.2em;
-  }
+}
 
 .logos img {
-	width: 115px;
-	max-height: 90px;
+  width: 115px;
+  max-height: 90px;
 }
 .logos img.tall {
-	width: auto;
-	max-height: 60px;
+  width: auto;
+  max-height: 60px;
 }
 
 .logos.large img {
-	width: 175px;
-	max-height: 90px;
+  width: 175px;
+  max-height: 90px;
 }
 
 
 .logos.varied img {
-	margin-right: 20px;
-	margin-bottom: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 .logos .logo-wrapper {
-	display: inline-block;
-	vertical-align: middle;
-	/* width: 125px; */
+  display: inline-block;
+  vertical-align: middle;
+  /* width: 125px; */
 }
 
 .blackbg {
@@ -267,12 +267,12 @@ section#sidebar { width: 300px; }
 footer#contentinfo {
   width: 100%;
   margin: 50px 0 20px;
-  }
+}
 
 p#licensing-info {
   position: relative;
   width: 100%;
-  }
+}
 
 #licensing-info img {margin-right: 10px;}
 
@@ -284,7 +284,7 @@ p#licensing-info {
   padding: 0 0 0 50px;
   font-size: 1.8em;
   color: #a9a9a9;
-  }
+}
 
 ul.buttons { margin-bottom: 25px; }
 
@@ -340,8 +340,40 @@ h1.title { font-size: 25px; }
 
 
 img.title {
-    width: 400px;
-    margin-bottom: 25px;
+  width: 400px;
+  margin-bottom: 25px;
 }
 
 .section { margin-bottom: 20px; }
+
+/* Tool tip */
+a.tooltip {outline:none; }
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {text-decoration:none;} 
+a.tooltip span {
+  z-index:10;display:none; padding:14px 20px;
+  margin-top:60px; margin-left:-160px;
+  width:240px; line-height:16px;
+}
+
+a.tooltip:hover span{
+  display:inline; position:absolute; 
+  border:2px solid #FFF;  color:#EEE;
+  background:#000 url(images/css-tooltip-gradient-bg.png) repeat-x 0 0;
+}
+
+.callout {
+  z-index:20;position:absolute;border:0;top:-14px;left:120px;
+}
+
+ /*CSS3 extras*/
+ a.tooltip span {
+border-radius:2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+
+-moz-box-shadow: 0px 0px 8px 4px #666;
+-webkit-box-shadow: 0px 0px 8px 4px #666;
+box-shadow: 0px 0px 8px 4px #666;
+opacity: 0.8;
+}
