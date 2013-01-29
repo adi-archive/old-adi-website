@@ -16,11 +16,13 @@ Adicu::Application.routes.draw do
   match "jobs", :to => "home#jobs", :as => "jobs"
   match "board_info", :to => "home#board_info", :as => "board_info"
 
+  match "register" => redirect("https://docs.google.com/a/adicu.com/spreadsheet/viewform?formkey=dGd2Qm9iSTBaWFNnS1UwQlUyZ3gwZFE6MQ#gid=0"), :as => :register
   match "blog", :to => "posts#index", :as => "blog"
   match "devfest2011", :to => "home#devfest_2011", :as => "devfest_2011"
   match "devfest", :to => "home#devfest_2013", :as => "devfest"
   match "devfest2012", :to => "home#devfest_2012", :as => "devfest_2012"
   match "devfest2013", :to => "home#devfest_2013", :as => "devfest_2013"
+  match "devfest/schedule", :to => "home#devfest_2013_schedule", :as => "devfest/schedule"
   match "techculture", :to => "home#techculture", :as => "techculture"
   match "jobfair", :to => "home#job_fair_2012", :as => "job_fair_2012"
   match "dinners", :to => "home#dinners", :as => "dinners"

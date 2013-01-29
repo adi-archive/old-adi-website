@@ -260,6 +260,21 @@ section#sidebar { width: 300px; }
   /* width: 125px; */
 }
 
+.panelists img {
+  width: 90px;
+  max-height: 90px;
+}
+
+.panelists.varied img {
+  margin-bottom: 5px;
+}
+
+.panelist-wrapper {
+  display: inline-block;
+  width: 100px;
+  vertical-align: top;
+}
+
 .blackbg {
   background: #000000;
 }
