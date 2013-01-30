@@ -248,6 +248,10 @@ section#sidebar { width: 300px; }
   max-height: 90px;
 }
 
+.logos.twilio img {
+  width: 94px;
+  height: 94px;
+}
 
 .logos.varied img {
   margin-right: 20px;
