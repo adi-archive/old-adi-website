@@ -3,19 +3,19 @@
 	display: block;
 }
 
-thead th{
+#schedule thead th{
 	padding: 0.5em 1.3em;
 	text-transform: uppercase;
 
 }
 
 
-tbody td{
+#schedule tbody td{
 	border-bottom: 1px solid #e7e7e7;
 	padding: 0.5em 1.3em;
 }
 
-tbody tr:hover{
+#schedule tbody tr:hover{
 	background: #e7e7e7;
 }
 
