@@ -1,0 +1,43 @@
+#schedule{
+	border-collapse: collapse;
+	display: block;
+}
+
+#schedule thead th{
+	padding: 0.5em 1.3em;
+	text-transform: uppercase;
+
+}
+
+
+#schedule tbody td{
+	border-bottom: 1px solid #e7e7e7;
+	padding: 0.5em 1.3em;
+}
+
+#schedule tbody tr:hover{
+	background: #e7e7e7;
+}
+
+#date{
+	background: #93c0d5;
+	color: #fff;
+
+}
+#devsched ul{
+	list-style: none;
+	margin: .7em;
+}
+
+#devsched li{
+	display: inline;
+}
+#devsched li a {
+	background: #448CAE;
+	color: white;
+	padding: 5px 5px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	text-align: center;
+	font-size: 1em;
+}
