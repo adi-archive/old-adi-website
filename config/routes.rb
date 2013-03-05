@@ -28,6 +28,8 @@ Adicu::Application.routes.draw do
   match "dinners", :to => "home#dinners", :as => "dinners"
   match "hacksquad", :to => "home#hacksquad", :as => "hacksquad"
   match "math_startup", :to => "home#math_startup", :as => "math_startup"
+  match "workshop_resources", :to => "home#workshop_resources", 
+	  			:as => "workshop_resources"
 
   root :to => "home#index"
 
