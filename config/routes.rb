@@ -18,6 +18,7 @@ Adicu::Application.routes.draw do
 
   match "register" => redirect("https://docs.google.com/a/adicu.com/spreadsheet/viewform?formkey=dGd2Qm9iSTBaWFNnS1UwQlUyZ3gwZFE6MQ#gid=0"), :as => :register
   match "blog", :to => "posts#index", :as => "blog"
+  match "hackcolumbia" => redirect("http://hackcolumbia.org/"), :as => :hackcolumbia
   match "devfest2011", :to => "home#devfest_2011", :as => "devfest_2011"
   match "devfest", :to => "home#devfest_2013", :as => "devfest"
   match "devfest2012", :to => "home#devfest_2012", :as => "devfest_2012"
