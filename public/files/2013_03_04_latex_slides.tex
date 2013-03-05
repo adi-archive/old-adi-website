@@ -1,0 +1,283 @@
+\documentclass{beamer}
+\usepackage{minted}
+
+\hypersetup{colorlinks=true, urlcolor=blue}
+\mode<presentation>
+{
+  \usetheme{Madrid}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{beaver} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+
+\title{Intro to \LaTeX}
+\author{Kenneth Cheng}
+\institute{Columbia University}
+\date{March 4, 2013}
+
+\begin{document}
+
+\begin{frame}{Intro to \LaTeX}
+  \titlepage
+\end{frame}
+
+\begin{frame}[fragile]{What is \LaTeX?}
+  \LaTeX\ is a typesetting (think Microsoft Word) tool for:
+  \begin{itemize}
+    \item mathematical writing
+    \item research papers
+    \item books
+    \item essays
+    \item resumes
+    \item forms
+    \item presentations
+  \end{itemize}
+  \LaTeX\ takes plain text files and compiles them to PDFs.
+\end{frame}
+
+\begin{frame}[fragile]{Why \LaTeX?}
+  Why you should use \LaTeX.
+  \begin{itemize}
+    \item content vs.\ presentation
+    \item plain text
+    \item research and web presence
+    \item looks nice!
+  \end{itemize}
+  Why you should NOT use \LaTeX.
+  \begin{itemize}
+    \item steep learning curve
+    \item hard to install?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Hello World}
+  \begin{minted}[gobble=2]{latex}
+    \documentclass{article}
+
+    \begin{document}
+    Hello world!
+    \end{document}
+  \end{minted}
+\end{frame}
+
+\begin{frame}[fragile]{Preamble}
+  \begin{minted}[gobble=2]{latex}
+    \documentclass{article}
+    \usepackage[margin=1in]{geometry}
+
+    \title{Intro to \LaTeX}
+    \author{Kenneth Cheng}
+    \date{March 4, 2013}
+
+    \begin{document}
+    \maketitle
+    Hello world!
+    \end{document}
+  \end{minted}
+\end{frame}
+
+\begin{frame}[fragile]{Content vs.\ Presentation}
+  \LaTeX\ uses backslash for all commands and symbols.
+  \begin{minted}[gobble=2]{latex}
+    \begin{equation}
+      \frac{1}{2} \le 1
+    \end{equation}
+  \end{minted}
+
+  \LaTeX\ treats whitespace similar to HTML.
+  \begin{itemize}
+    \item
+      \begin{minted}[gobble=6]{latex}
+        The quick brown fox jumps over the lazy dog.
+      \end{minted}
+    \item
+      \begin{minted}[gobble=6]{latex}
+        The    quick brown fox    jumps
+        over the lazy dog.
+      \end{minted}
+  \end{itemize}
+
+  \LaTeX\ supports comments!
+  \begin{minted}[gobble=2]{latex}
+    This will show
+    % This won't show up in the PDF.
+    up in the PDF.
+  \end{minted}
+\end{frame}
+
+\begin{frame}[fragile]{Semantics}
+  \LaTeX\ organizes content on the:
+  \begin{itemize}
+    \item block level in environments.
+      \begin{minted}[gobble=6]{latex}
+        \begin{itemize}
+          \item block level in environments.
+          \item inline level in commands.
+        \end{itemize}
+      \end{minted}
+    \item inline level in commands.
+      \begin{minted}[gobble=6]{latex}
+        \section{Style Guide}
+        You can \emph{italicize} and \textbf{bold} fonts.
+      \end{minted}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile, t]{Math Mode}
+  You can write math in math-supported environments.
+  \begin{itemize}
+    \item Equation
+      \begin{minted}[gobble=6]{latex}
+        \begin{equation}
+          \sum_{i=0}^n i = \frac{n(n+1)}{2}
+        \end{equation}
+      \end{minted}
+      \begin{equation}
+        \sum_{i=0}^n i = \frac{n(n+1)}{2}
+      \end{equation}
+  \end{itemize}
+  You can remove the numbering using the \verb|equation*| environment.
+  \begin{itemize}
+    \item
+      \begin{minted}[gobble=6]{latex}
+        \begin{equation*}
+          \sin \alpha, \Gamma(z) = \int_0^\infty t^{z-1} e^{-t} dt
+        \end{equation*}
+      \end{minted}
+  \end{itemize}
+  \begin{equation*}
+    \sin \alpha, \Gamma(z) = \int_0^\infty t^{z-1} e^{-t} dt
+  \end{equation*}
+\end{frame}
+\begin{frame}[fragile, t]{Math Mode}
+  You can write math in math-supported environments.
+  \begin{itemize}
+    \item Align
+      \begin{minted}[gobble=6]{latex}
+        \begin{align}
+          \sum_{i=0}^{n+1} i & = (n+1) + \sum_{i=0}^n i \\
+          & = (n+1) + \frac{n(n+1)}{2} \\
+          & = \frac{(n+2)(n+1)}{2}
+        \end{align}
+      \end{minted}
+      \begin{align}
+        \sum_{i=0}^{n+1} i & = (n+1) + \sum_{i=0}^n i \\
+        & = (n+1) + \frac{n(n+1)}{2} \\
+        & = \frac{(n+2)(n+1)}{2}
+      \end{align}
+  \end{itemize}
+\end{frame}
+\begin{frame}[fragile, t]{Math Mode}
+  You can write math in math-supported environments.
+  \begin{itemize}
+    \item Inline \$\$
+      \begin{minted}[gobble=6]{latex}
+        By induction, $\forall n \in \mathbb{N},
+        \sum_{i=0}^n i = \frac{n(n+1)}{2}$.
+      \end{minted}
+      By induction, $\displaystyle \forall n \in \mathbb{N},
+      \sum_{i=0}^n i = \frac{n(n+1)}{2}$.
+  \end{itemize}
+  Some symbols like $\sum$ render differently inline.
+  \begin{itemize}
+    \item Add \verb|\displaystyle|
+      \begin{minted}[gobble=6]{latex}
+        By induction, $\displaystyle \forall n \in \mathbb{N},
+        \sum_{i=0}^n i = \frac{n(n+1)}{2}$.
+      \end{minted}
+    \item or add it to your preamble.
+      \begin{minted}[gobble=6]{latex}
+        \everymath{\displaystyle}
+      \end{minted}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Special characters}
+  \begin{itemize}
+    \item \verb|\$, \#, \%, \&, \~, \_, \^, \textbackslash, \{, \}|
+    \item Use \verb|``quote''| for quotations.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{A few symbols}
+  \url{http://www.artofproblemsolving.com/Wiki/index.php/LaTeX:Symbols}
+\end{frame}
+
+\begin{frame}[fragile, t]{Tables}
+  In math mode (for matrices):
+  \begin{itemize}
+    \item
+      \begin{minted}[gobble=6]{latex}
+        \begin{equation*}
+          \left(
+          \begin{array}{ccc}
+            a & b & c \\
+            d & e & f \\
+            g & h & i
+          \end{array}
+          \right)
+        \end{equation*}
+      \end{minted}
+      \begin{equation*}
+        \left(
+        \begin{array}{ccc}
+          a & b & c \\
+          d & e & f \\
+          g & h & i
+        \end{array}
+        \right)
+      \end{equation*}
+  \end{itemize}
+\end{frame}
+\begin{frame}[fragile, t]{Tables}
+  NOT in math mode:
+  \begin{itemize}
+    \item
+      \begin{minted}[gobble=6]{latex}
+        \begin{tabular}{|l|c|}
+          \hline
+          operators & $F(t) = \mathcal{L}\{f(t)\}(s)$ \\
+          \hline
+          vectors & $\mathbf{x} \cdot \hat{\mathbf{n}}$ \\
+          \hline
+          common sets & $\mathbb{Z}, \mathbb{Q}, \mathbb{R}$ \\
+          \hline
+        \end{tabular}
+      \end{minted}
+      \begin{tabular}{|l|c|}
+        \hline
+        operators & $F(t) = \mathcal{L}\{f(t)\}(s)$ \\
+        \hline
+        vectors & $\mathbf{x} \cdot \hat{\mathbf{n}}$ \\
+        \hline
+        common sets & $\mathbb{Z}, \mathbb{Q}, \mathbb{R}$ \\
+        \hline
+      \end{tabular}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{TikZ}
+  TikZ is your graphics package for
+  \begin{itemize}
+    \item plots
+    \item graphs and trees
+    \item diagrams
+  \end{itemize}
+  \url{http://texample.net/tikz/examples/}
+\end{frame}
+
+\begin{frame}[fragile]{Resources}
+  \begin{itemize}
+    \item \url{http://en.wikibooks.org/wiki/LaTeX}
+    \item \url{http://www.artofproblemsolving.com/Wiki/index.php/LaTeX}
+    \item \url{http://texample.net/tikz/examples/}
+    \item \url{http://tex.stackexchange.com/}
+    \item \url{http://www.ctan.org/}
+  \end{itemize}
+\end{frame}
+
+\end{document}
